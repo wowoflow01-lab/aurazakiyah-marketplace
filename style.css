@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 20px;
+    background-color: #dcaebc;
+    color: black;
+}
+nav{
+    display: flex;
+    gap: 20px;
+
+}
+.product-card{
+    background-color: #b05d80;
+    border:5px;
+    border-radius: 12px;
+    box-shadow: 0px 12px #e76d92 ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    transition: transfrom 0.3s;
+}
+.product-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+button{
+    width: 70%;
+    background-color: #e76d92;
+    height: 25px;
+    border-radius: 10px;
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.product-card:hover{
+    transform: scale(1.05);
+    background-color: antiquewhite;
+
+
+}
+.qty-steper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.qty-value{
+    width: 50px;
+    height: 25px;
+    align-items: center;
+    border-radius: 8px;
+}
+footer{
+    background-color: #e76d92;
+    color: bisque;
+    padding: 30px;
+}
+.kontak{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.kontak input, 
+.kontak textarea{
+    padding: 10px;
+    border-radius: 7px;
+}
+main{
+    margin: 30px 0px;
+}
+.qtn-btn{
+
+}
